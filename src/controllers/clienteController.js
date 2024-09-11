@@ -75,8 +75,6 @@ exports.eliminarCliente = (req, res) => {
   res.status(200).json({ mensaje: 'Cliente eliminado exitosamente.' });
 };
 
-const { leerClientesDesdeArchivo, escribirClientesEnArchivo } = require('./ruta/del/archivo/anterior');
-
 exports.actualizarCliente = (req, res) => {
   const clientes = leerClientesDesdeArchivo();
   const clienteIndex = clientes.findIndex(c => c.id === req.params.id);
