@@ -74,3 +74,69 @@ exports.eliminarCliente = (req, res) => {
 
   res.status(200).json({ mensaje: 'Cliente eliminado exitosamente.' });
 };
+
+const { leerClientesDesdeArchivo, escribirClientesEnArchivo } = require('./ruta/del/archivo/anterior');
+
+exports.actualizarCliente = (req, res) => {
+  const clientes = leerClientesDesdeArchivo();
+  const clienteIndex = clientes.findIndex(c => c.id === req.params.id);
+  if (clienteIndex === -1) return res.status(404).json({ mensaje: 'Cliente no encontrado.' });
+
+  const { nombre, correo, telefono, empresa, pais, fechaContacto, estadoCliente } = req.body;
+
+  if (correo && clientes.some(c => c.correo === correo && c.id !== req.params.id)) {
+    return res.status(400).json({ mensaje: 'El correo electrónico ya está registrado por otro cliente.' });
+  }
+
+  clientes[clienteIndex] = {
+    ...clientes[clienteIndex],
+    nombre: nombre || clientes[clienteIndex].nombre,
+    correo: correo || clientes[clienteIndex].correo,
+    telefono: telefono || clientes[clienteIndex].telefono,
+    empresa: empresa !== undefined ? empresa : clientes[clienteIndex].empresa,
+    pais: pais || clientes[clienteIndex].pais,
+    fechaContacto: fechaContacto || clientes[clienteIndex].fechaContacto,
+    estadoCliente: estadoCliente || clientes[clienteIndex].estadoCliente
+  };
+
+  escribirClientesEnArchivo(clientes);
+
+  res.status(200).json({ mensaje: 'Cliente actualizado exitosamente.', cliente: clientes[clienteIndex] });
+};
+
+exports.leerClientes = (req, res) => {
+  let clientes = leerClientesDesdeArchivo();
+  
+  const { estadoCliente, empresa, fechaInicio, fechaFin } = req.query;
+  
+  if (estadoCliente) {
+    clientes = clientes.filter(c => c.estadoCliente === estadoCliente);
+  }
+  
+  if (empresa) {
+    clientes = clientes.filter(c => c.empresa.toLowerCase().includes(empresa.toLowerCase()));
+  }
+  
+  if (fechaInicio && fechaFin) {
+    const inicio = new Date(fechaInicio);
+    const fin = new Date(fechaFin);
+    clientes = clientes.filter(c => {
+      const fecha = new Date(c.fechaContacto);
+      return fecha >= inicio && fecha <= fin;
+    });
+  } else if (fechaInicio) {
+    const inicio = new Date(fechaInicio);
+    clientes = clientes.filter(c => {
+      const fecha = new Date(c.fechaContacto);
+      return fecha >= inicio;
+    });
+  } else if (fechaFin) {
+    const fin = new Date(fechaFin);
+    clientes = clientes.filter(c => {
+      const fecha = new Date(c.fechaContacto);
+      return fecha <= fin;
+    });
+  }
+
+  res.status(200).json(clientes);
+};
