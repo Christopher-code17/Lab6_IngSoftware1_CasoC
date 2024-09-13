@@ -1,3 +1,68 @@
 [
+    {
+        "id": "a1234abc-1b2c-3d4e-5f67-8910abcdefg1",
+        "nombre": "Carlos Morales",
+        "correo": "carlos.morales@microsoft.com",
+        "telefono": "+34-654-321-123",
+        "empresa": "Microsoft",
+        "pais": "Guatemala",
+        "fechaContacto": "2023-05-15",
+        "estadoCliente": "En negociación"
+      },
+
+      {
+        "id": "d4567abc-1b2c-3d4e-5f67-8910abcdefg4",
+        "nombre": "Jorge Rodríguez",
+        "correo": "jorge.rodriguez@google.com",
+        "telefono": "+34-123-456-789",
+        "empresa": "Google",
+        "pais": "Guatemala",
+        "fechaContacto": "2023-06-30",
+        "estadoCliente": "Perdido"
+      },
+
+      {
+        "id": "f6789abc-1b2c-3d4e-5f67-8910abcdefg6",
+        "nombre": "Pedro Ramírez",
+        "correo": "pedro.ramirez@tesla.com",
+        "telefono": "+34-654-789-321",
+        "empresa": "Tesla",
+        "pais": "Guatemala",
+        "fechaContacto": "2023-04-10",
+        "estadoCliente": "Nuevo"
+      },
+
+      {
+        "id": "g7890abc-1b2c-3d4e-5f67-8910abcdefg7",
+        "nombre": "Gloria Méndez",
+        "correo": "gloria.mendez@intel.com",
+        "telefono": "+34-321-654-987",
+        "empresa": "Intel",
+        "pais": "Guatemala",
+        "fechaContacto": "2023-07-05",
+        "estadoCliente": "Ganado"
+      },
+
+      {
+        "id": "h8901abc-1b2c-3d4e-5f67-8910abcdefg8",
+        "nombre": "Fernando Castillo",
+        "correo": "fernando.castillo@ibm.com",
+        "telefono": "+34-987-321-456",
+        "empresa": "IBM",
+        "pais": "Guatemala",
+        "fechaContacto": "2023-08-22",
+        "estadoCliente": "Perdido"
+      },
+
+      {
+        "id": "i9012abc-1b2c-3d4e-5f67-8910abcdefg9",
+        "nombre": "Sofía García",
+        "correo": "sofia.garcia@netflix.com",
+        "telefono": "+34-123-987-654",
+        "empresa": "Netflix",
+        "pais": "Guatemala",
+        "fechaContacto": "2023-09-10",
+        "estadoCliente": "En negociación"
+      }
 
 ]
