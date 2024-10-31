@@ -4,7 +4,8 @@ Laboratorio 6 Caso "C" del curso de ingeniería de software I
 Se solicitaron 10 pruebas unitarias para el API (del laboratorio 6), utilizando como mínimo una en Mock. 
 # Explicación: 
 - Como el programa se encuentra corriendo con node.js se tomaron los frameworks Mocha y Chai.
-- Para mocks  se tilizó sinon.
+- Para mocks  se utilizó sinon.
+# Ejecución: 
 - Para instalar las dependencias con este comando:
   
     npm install --save-dev mocha chai sinon sinon-chai
