@@ -1,17 +1,24 @@
 {
-  "name": "lab6_ingsoftware1_casoc",
-  "version": "1.0.0",
-  "description": "Laboratorio 6 Caso \"C\" del curso de ingeniería de software I",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2",
-    "express-validator": "^7.2.0",
-    "uuid": "^10.0.0"
-  }
+    "type": "module",
+    "name": "lab6_ingsoftware1_casoc",
+    "version": "1.0.0",
+    "description": "Laboratorio 6 Caso \"C\" del curso de ingeniería de software I",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha --recursive"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2",
+        "express-validator": "^7.2.0",
+        "uuid": "^10.0.0"
+    },
+    "devDependencies": {
+        "chai": "^5.1.2",
+        "mocha": "^10.8.2",
+        "sinon": "^19.0.2",
+        "sinon-chai": "^4.0.0"
+    }
 }

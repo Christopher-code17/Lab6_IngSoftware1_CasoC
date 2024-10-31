@@ -1,3 +1,92 @@
 [
-
+  {
+    "id": "18bb5f09-5397-469d-a785-0da2d4cdeeca",
+    "nombre": "Erwin Andres Lima",
+    "correo": "Lima.Andres@gmail.com",
+    "telefono": "+34-123-456-780",
+    "empresa": "Universidad Rafael Landivar",
+    "pais": "Guatemala",
+    "fechaContacto": "2023-09-15",
+    "estadoCliente": "En negociación"
+  },
+  {
+    "id": "5693ebb6-ee74-45d6-88ed-28557ea69f31",
+    "nombre": "Carlos Barrientos",
+    "correo": "barryphotos7@gmail.com",
+    "telefono": "+34-490-987-550",
+    "empresa": "Universidad Rafael Landivar",
+    "pais": "Guatemala",
+    "fechaContacto": "2024-09-14",
+    "estadoCliente": "Nuevo"
+  },
+  {
+    "id": "d23d38e4-3f7d-4403-894b-4f0d250e23eb",
+    "nombre": "Andres Agustin",
+    "correo": "jaagustinga@correo.url.edu.gt",
+    "telefono": "+34-104-546-823",
+    "empresa": "Universidad Rafael Landivar",
+    "pais": "Guatemala",
+    "fechaContacto": "2022-05-06",
+    "estadoCliente": "Perdido"
+  },
+  {
+    "id": "e8e0a83c-76c3-4512-b906-06128f0db49f",
+    "nombre": "Nilssen ",
+    "correo": "nilssssen1999999@gmail.com",
+    "telefono": "+34-987-321-456",
+    "empresa": "Universidad Rafael Landivar",
+    "pais": "Guatemala",
+    "fechaContacto": "2023-01-04",
+    "estadoCliente": "En negociación"
+  },
+  {
+    "id": "123daa58-4f0b-4285-88e2-28e442460c65",
+    "nombre": "Ing Karen Liska",
+    "correo": "Lima.Karen@gmail.com",
+    "telefono": "+34-123-446-780",
+    "empresa": "Universidad Rafael Landivar",
+    "pais": "Guatemala",
+    "fechaContacto": "2023-06-15",
+    "estadoCliente": "En negociación"
+  },
+  {
+    "id": "dd0d636f-e079-4d96-8429-b4a0a1d13e3e",
+    "nombre": "EA",
+    "correo": "test@gmail.com",
+    "telefono": "+34-123-456-789",
+    "empresa": "",
+    "pais": "España",
+    "fechaContacto": "2023-09-15",
+    "estadoCliente": "Nuevo"
+  },
+  {
+    "id": "ef3667ec-6cd8-4bea-8160-8a34ed92a177",
+    "nombre": "Erwin Andres Lima",
+    "correo": "futuro@gmail.com",
+    "telefono": "+34-123-456-780",
+    "empresa": "",
+    "pais": "Guatemala",
+    "fechaContacto": "2025-09-15",
+    "estadoCliente": "En negociación"
+  },
+  {
+    "id": "51116064-4d57-4209-b0c1-7f8a600446ff",
+    "nombre": "Carlos Barrientos",
+    "correo": "carlos@correo.com",
+    "telefono": "+34-490-9875-50",
+    "empresa": "",
+    "pais": "Guatemala",
+    "fechaContacto": "2024-09-14",
+    "estadoCliente": "Nuevo"
+  },
+  {
+    "id": "3df9bcbc-b23f-4dea-a3cd-8c1e0333c404",
+    "nombre": "Juan Perez",
+    "correo": "juanperez@gmail.com",
+    "telefono": "+34-123-456-789",
+    "empresa": "",
+    "pais": "España",
+    "fechaContacto": "2023-09-15",
+    "estadoCliente": "Nuevo"
+  }
 ]
